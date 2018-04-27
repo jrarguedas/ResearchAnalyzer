@@ -3,8 +3,12 @@ import pytesseract
 import numpy as np
 from PIL import Image
 import pyautogui
+from adminfile import writefileappend
 
-def diffImage(image1, image2):
+idx = 0
+
+def diffImage(image1, image2,path, miliseg):
+    global idx
     # load two images
     diff1 = cv2.imread(image1)
     diff2 = cv2.imread(image2)
@@ -20,51 +24,48 @@ def diffImage(image1, image2):
     mask = np.full((diff1.shape[0], diff1.shape[1]), 0, dtype=np.uint8)  # mask is only
     #mask.fill(255,)
 
-    idx = 0
+
     # look akmeach one of the contours and, if it is not noise, we draw its Bounding Box on the original image
     for c in contours:
         if cv2.contourArea(c) >= 200:
             posicion_x, posicion_y, ancho, alto = cv2.boundingRect(c)  # save the dimensions of the Bounding Box
             cv2.rectangle(mask, (posicion_x, posicion_y), (posicion_x + ancho, posicion_y + alto), (255,255,255),-1)  # Draw the bounding box
+            # get first masked value (foreground)
+            img = cv2.bitwise_and(diff1, diff1, mask=mask)
+            cropped = img[posicion_y:posicion_y + alto, posicion_x:posicion_x + ancho]
 
-            #cv2.imwrite(''+ str(idx) + '.png', c)
-            #idx +=1
-            #cv2.imwrite('' + str(idx) + '.png', mask)
-            #idx +=1
+            text = textImage(cropped)
 
-            #cv2.imshow('countour',c)
-            #cv2.waitKey(0)
+            strData = miliseg + "," + image1 + "," + text.strip('\n')
+            processed_image_path = path + "processed_image.txt"
 
-            #cv2.imshow('mask', mask)
-            #cv2.waitKey(0)
-
-    # get first masked value (foreground)
-    img = cv2.bitwise_and(diff1, diff1, mask=mask)
+            writefileappend(processed_image_path, strData)
+            cv2.imshow("l", cropped)
+            cv2.waitKey(0)
 
 
-    cv2.imshow("diff", img)
-    cv2.waitKey(0)
+
+
+    '''
 
     img = Image.fromarray(img)
-    img.save("diff"+ str(idx)+".png")
+    diffFile= path+ "diff"+ str(idx)+".png"
+    img.save(diffFile)
     idx+=1
 
-    #white = allPixelWhite(img)
-    #textImage(white)
+    white = allPixelWhite(img)
+    whiteFile = path + "white" + str(idx) + ".png"
+    img.save(whiteFile)
+    text = textImage(white)
 
-    return img
+    strData = miliseg + "," + image1 + "," + text.strip('\n')
+    processed_image_path = path + "processed_image.txt"
 
-def allPixelWhite(img):
-    pixels = img.load()
-    for y in xrange(img.size[1]):
-        for x in xrange(img.size[0]):
-            if pixels[x,y] == (0,0,0):
-                pixels[x,y] = (255,255,255)
+    writefileappend(processed_image_path, strData)
+    strData = ""
 
-    cv2.imshow("white", img)
-    cv2.waitKey(0)
-    img.save("blanca.png")
-    return img
+    '''
+    #return img
 
 
 def processImage(img):
@@ -100,43 +101,9 @@ def processImage(img):
     finishImg.save("blanca1.png")
     return finishImg
 
-# get screen size
-def getScreenSize():
-    size = pyautogui.size()
-    return size
-
-def cutImage(img, x, y):
-    # screensize width heigth
-    screensize = getScreenSize()
-
-    # take the highest point left and the lowest point right. (to form a rectangle cropbox)
-    x1 = x - (screensize.x / 4)
-    x2 = x + (screensize.x / 4)
-    y1 = y - (screensize.y / 4)
-    y2 = y + (screensize.y / 4)
-
-    # width and height
-    w = x2 - x1
-    h = y2 - y1
-
-    # take a cropbox
-    img.crop((0, 0, 100, 100))
-    img = pyautogui.screenshot(region=((x1, y1, w, h)))
-
-    return img
-
-def createLog():
-    pass
 
 def textImage(img):
-    result = pytesseract.image_to_string(img, lang ="eng")
+    result = pytesseract.image_to_string(img, lang ="eng+esp")
     print (result)
+   #return (result)
 
-
-#imagen1 = "texto1.png"
-#imagen2 = "texto2.png"
-
-
-#diffImage = diffImage(imagen1,imagen2)
-#white = allPixelWhite(diffImage)
-#textImage(white)

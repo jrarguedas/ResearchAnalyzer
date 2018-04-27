@@ -15,6 +15,16 @@ def readfile(path):
     infile.close()
     return file
 
+def writefileappend(filename, data):
+    if os.path.exists(filename):
+        append_write = 'a' # append if already exists
+    else:
+        append_write = 'w' # make a new file if not
+
+    f = open(filename,append_write)
+    f.write(data+'\n')
+    f.close()
+
 
 # Function writes to a file (overwrite)
 def writefile(path, datos):
