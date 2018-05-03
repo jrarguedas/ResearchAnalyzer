@@ -10,14 +10,11 @@ import numpy as np
 from adminfile import *
 import checkErrorLog
 import os
-from constants import *
-from PIL import Image
 
 path = os.getcwd() + "/logs_to_treat"
 logsList = os.listdir(path)
 
 listLogInfo = []
-nameLog = "coordinates.log"
 
 # Function that checks if there are folders or not in the address logs_to_treat
 # Check the logs of each folder with the scriptchecker script
@@ -69,23 +66,23 @@ def readClickLog(clicks_filename):
 
 
 def processClickLog(logged_clicks,clickImagesPath,processed_image_path,resolution):
-    screensize = resolution
     for i in logged_clicks:
         infoImage1 = i[0]
         infoImage2 = i[1]
         Xdown, Ydown, miliseg_down, click_down, image_down = infoImage1.split(",")
         Xup, Yup, miliseg_up, click_up, image_up = infoImage2.split(",")
-        if (Xdown != Xup or Ydown != Yup):
+        if (abs(int(Xdown) - int(Xup)) > 15):
             print("")
             print("se sospecha que subrayo")
             print(Xdown, Ydown, miliseg_down, click_down, image_down)
             print(Xup, Yup, miliseg_up, click_up, image_up)
             pathImageDown = os.path.join(clickImagesPath, image_down)
             pathImageUp = os.path.join(clickImagesPath, image_up)
-            findCoordinates(Xdown,Ydown,pathImageDown,Xup,Yup,pathImageUp,screensize)
+            findCoordinates(Xdown,Ydown,pathImageDown,Xup,Yup,pathImageUp,resolution)
             im = diffImage(pathImageDown, pathImageUp, processed_image_path, miliseg_down)
 
 
+# find the x, y coordinates inside the image and draw a circle
 def findCoordinates(Xdown,Ydown,pathImageDown,Xup,Yup,pathImageUp,screensize):
     imgDown = cv2.imread(pathImageDown)
     imgUp = cv2.imread(pathImageUp)
@@ -193,5 +190,5 @@ def cutImage(x,y,img,screensize):
     # take a cropbox
     #image_data = pyautogui.screenshot(region=((x1, y1, w, h)))
 
-
-loadClickInfo()
+if __name__ == '__main__':
+    loadClickInfo()

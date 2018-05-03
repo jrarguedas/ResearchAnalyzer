@@ -2,10 +2,8 @@ import cv2
 import pytesseract
 import numpy as np
 from PIL import Image
-import pyautogui
 from adminfile import writefileappend
-
-idx = 0
+import os
 
 def diffImage(image1, image2,path, miliseg):
     global idx
@@ -36,8 +34,9 @@ def diffImage(image1, image2,path, miliseg):
 
             text = textImage(cropped)
 
-            strData = miliseg + "," + image1 + "," + text.strip('\n')
-            processed_image_path = path + "processed_image.txt"
+            strData = miliseg + "," + image1 + "," + str(text)
+            #processed_image_path = path + "processed_image.txt"
+            processed_image_path = os.path.join(path, "processed_image.txt")
 
             writefileappend(processed_image_path, strData)
             cv2.imshow("l", cropped)
