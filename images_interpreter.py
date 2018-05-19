@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
-
-from loginfo import LogInfo
-import os
-import subprocess
-import pyautogui
 from image_underline import diffImage
+from skimage.measure import compare_ssim
 import cv2
 import numpy as np
 from adminfile import *
@@ -71,15 +67,36 @@ def processClickLog(logged_clicks,clickImagesPath,processed_image_path,resolutio
         infoImage2 = i[1]
         Xdown, Ydown, miliseg_down, click_down, image_down = infoImage1.split(",")
         Xup, Yup, miliseg_up, click_up, image_up = infoImage2.split(",")
-        if (abs(int(Xdown) - int(Xup)) > 15):
-            print("")
-            print("se sospecha que subrayo")
-            print(Xdown, Ydown, miliseg_down, click_down, image_down)
-            print(Xup, Yup, miliseg_up, click_up, image_up)
+        if (abs(int(Xdown) - int(Xup)) > 3):
             pathImageDown = os.path.join(clickImagesPath, image_down)
             pathImageUp = os.path.join(clickImagesPath, image_up)
-            findCoordinates(Xdown,Ydown,pathImageDown,Xup,Yup,pathImageUp,resolution)
-            im = diffImage(pathImageDown, pathImageUp, processed_image_path, miliseg_down)
+            score = similarity(pathImageDown,pathImageUp)
+            print("_______________________")
+            print("cambian las coordenadas")
+            print(Xdown, Ydown, miliseg_down, click_down, image_down)
+            print(Xup, Yup, miliseg_up, click_up, image_up)
+            print("_______________________")
+            if (score > 0.98):
+                print("")
+                print("se sospecha que subrayo")
+                print(Xdown, Ydown, miliseg_down, click_down, image_down)
+                print(Xup, Yup, miliseg_up, click_up, image_up)
+                #findCoordinates(Xdown,Ydown,pathImageDown,Xup,Yup,pathImageUp,resolution)
+                #im = diffImage(pathImageDown, pathImageUp, processed_image_path, miliseg_down)
+
+
+def similarity(img1,img2):
+    imageA = cv2.imread(img1)
+    imageB = cv2.imread(img2)
+
+    # convert the images to grayscale
+    grayA = cv2.cvtColor(imageA, cv2.COLOR_BGR2GRAY)
+    grayB = cv2.cvtColor(imageB, cv2.COLOR_BGR2GRAY)
+
+    # compute the Structural Similarity Index (SSIM) between the two images
+    score, _ = compare_ssim(grayA, grayB, full=True)
+    return score
+
 
 
 # find the x, y coordinates inside the image and draw a circle
