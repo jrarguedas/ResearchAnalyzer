@@ -1,18 +1,22 @@
 import cv2
 import pytesseract
 import numpy as np
-from PIL import Image
+from PIL import Image, ImageEnhance, ImageFilter
 from adminfile import writefileappend
 import os
+idCrop = 0
+
 
 def diffImage(image1, image2,path, miliseg):
-    global idx
+    global idCrop
     # load two images
     diff1 = cv2.imread(image1)
     diff2 = cv2.imread(image2)
 
     # calculate the absolute difference of the two images
     diff_total = cv2.absdiff(diff1, diff2)
+    #cv2.imshow("diff", diff_total)
+    #cv2.waitKey(0)
 
     # Search the countours
     imagen_gris = cv2.cvtColor(diff_total, cv2.COLOR_BGR2GRAY)
@@ -27,45 +31,48 @@ def diffImage(image1, image2,path, miliseg):
     for c in contours:
         if cv2.contourArea(c) >= 200:
             posicion_x, posicion_y, ancho, alto = cv2.boundingRect(c)  # save the dimensions of the Bounding Box
-            cv2.rectangle(mask, (posicion_x, posicion_y), (posicion_x + ancho, posicion_y + alto), (255,255,255),-1)  # Draw the bounding box
+            r = cv2.rectangle(mask, (posicion_x, posicion_y), (posicion_x + ancho, posicion_y + alto), (255,255,255),-1)  # Draw the bounding box
+
+            #cv2.imshow("rec_mask", r)
+            #cv2.waitKey(0)
             # get first masked value (foreground)
             img = cv2.bitwise_and(diff1, diff1, mask=mask)
+
+            #cv2.imshow("bitwise", img)
+            #cv2.waitKey(0)
             cropped = img[posicion_y:posicion_y + alto, posicion_x:posicion_x + ancho]
 
-            text = textImage(cropped)
+            # PRUEBA DE TESSERACT
+            #text = textImage(cropped)
 
-            strData = miliseg + "," + image1 + "," + str(text)
+            img = Image.fromarray(cropped)
+            resize_crop = resize(img)
+            text2 = textImage(resize_crop)
+
+            cropName = "crop" + str(idCrop) + ".png"
+            cropFile = os.path.join(path, cropName)
+            img.save(cropFile)
+            idCrop += 1
+
+            strData = miliseg + "," + os.path.basename(image1) + "," + cropName + "," + text2.encode('utf-8') + "\n"
             #processed_image_path = path + "processed_image.txt"
-            processed_image_path = os.path.join(path, "processed_image.txt")
+            processed_log_path = os.path.join(path, "processed_image.txt")
 
-            writefileappend(processed_image_path, strData)
-            cv2.imshow("l", cropped)
-            cv2.waitKey(0)
+            writefileappend(processed_log_path, strData)
+
+            #cv2.imshow("l", cropped)
+            #cv2.waitKey(0)
 
 
-
-
-    '''
-
-    img = Image.fromarray(img)
-    diffFile= path+ "diff"+ str(idx)+".png"
-    img.save(diffFile)
-    idx+=1
-
-    white = allPixelWhite(img)
-    whiteFile = path + "white" + str(idx) + ".png"
-    img.save(whiteFile)
-    text = textImage(white)
-
-    strData = miliseg + "," + image1 + "," + text.strip('\n')
-    processed_image_path = path + "processed_image.txt"
-
-    writefileappend(processed_image_path, strData)
-    strData = ""
-
-    '''
-    #return img
-
+def resize(img):
+    porcent = 2.0
+    #img = Image.open(img)
+    hpercent = int(float(porcent) * float(img.size[1]))
+    wsize = int(float(img.size[0]) * float(porcent))
+    #print(img.size[0],img.size[1])
+    #print(wsize, hpercent)
+    img = img.resize((wsize, hpercent), Image.ANTIALIAS)
+    return img
 
 def processImage(img):
     #read
@@ -102,7 +109,7 @@ def processImage(img):
 
 
 def textImage(img):
-    result = pytesseract.image_to_string(img, lang ="eng+esp")
+    result = pytesseract.image_to_string(img, lang="eng+spa", boxes=False, config="--psm 3 --oem 2")
     print (result)
-   #return (result)
+    return (result)
 

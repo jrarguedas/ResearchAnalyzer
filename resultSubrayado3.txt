@@ -1,0 +1,275 @@
+_______________________
+cambian las coordenadas
+('648', '16', '9577109', 'left_down', '20180419_174717_433000_%processname%_masterchef.png')
+('0', '344', '9577500', 'left_up', '20180419_174717_823000_%processname%_masterchef.png')
+_______________________
+_______________________
+cambian las coordenadas
+('1067', '81', '10683796', 'left_down', '20180419_180544_119000_%processname%_masterchef.png')
+('969', '79', '10686578', 'left_up', '20180419_180546_900000_%processname%_masterchef.png')
+_______________________
+('score', 0.9990318154164316)
+
+Subrayo
+('1067', '81', '10683796', 'left_down', '20180419_180544_119000_%processname%_masterchef.png')
+('969', '79', '10686578', 'left_up', '20180419_180546_900000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1119', '61', '10689593', 'left_down', '20180419_180549_916000_%processname%_masterchef.png')
+('992', '61', '10690515', 'left_up', '20180419_180550_838000_%processname%_masterchef.png')
+_______________________
+('score', 0.999051264117254)
+
+Subrayo
+('1119', '61', '10689593', 'left_down', '20180419_180549_916000_%processname%_masterchef.png')
+('992', '61', '10690515', 'left_up', '20180419_180550_838000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1067', '79', '10691265', 'left_down', '20180419_180551_588000_%processname%_masterchef.png')
+('967', '59', '10692421', 'left_up', '20180419_180552_760000_%processname%_masterchef.png')
+_______________________
+('score', 0.9960338817554923)
+
+Subrayo
+('1067', '79', '10691265', 'left_down', '20180419_180551_588000_%processname%_masterchef.png')
+('967', '59', '10692421', 'left_up', '20180419_180552_760000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1151', '141', '10849734', 'left_down', '20180419_180830_59000_%processname%_masterchef.png')
+('1138', '141', '10854687', 'left_up', '20180419_180835_12000_%processname%_masterchef.png')
+_______________________
+('score', 0.9994552831572263)
+
+Subrayo
+('1151', '141', '10849734', 'left_down', '20180419_180830_59000_%processname%_masterchef.png')
+('1138', '141', '10854687', 'left_up', '20180419_180835_12000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1149', '145', '10895484', 'left_down', '20180419_180915_818000_%processname%_masterchef.png')
+('1145', '142', '10895578', 'left_up', '20180419_180915_911000_%processname%_masterchef.png')
+_______________________
+('score', 0.9997471496153059)
+
+Subrayo
+('1149', '145', '10895484', 'left_down', '20180419_180915_818000_%processname%_masterchef.png')
+('1145', '142', '10895578', 'left_up', '20180419_180915_911000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1179', '145', '10915531', 'left_down', '20180419_180935_896000_%processname%_masterchef.png')
+('990', '141', '10916703', 'left_up', '20180419_180937_21000_%processname%_masterchef.png')
+_______________________
+('score', 0.9991202057359381)
+
+Subrayo
+('1179', '145', '10915531', 'left_down', '20180419_180935_896000_%processname%_masterchef.png')
+('990', '141', '10916703', 'left_up', '20180419_180937_21000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1173', '145', '10917953', 'left_down', '20180419_180938_271000_%processname%_masterchef.png')
+('996', '141', '10919140', 'left_up', '20180419_180939_458000_%processname%_masterchef.png')
+_______________________
+('score', 0.9992333208001433)
+
+Subrayo
+('1173', '145', '10917953', 'left_down', '20180419_180938_271000_%processname%_masterchef.png')
+('996', '141', '10919140', 'left_up', '20180419_180939_458000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1143', '65', '10953437', 'left_down', '20180419_181013_774000_%processname%_masterchef.png')
+('964', '65', '10954562', 'left_up', '20180419_181014_884000_%processname%_masterchef.png')
+_______________________
+('score', 0.9992130492304455)
+
+Subrayo
+('1143', '65', '10953437', 'left_down', '20180419_181013_774000_%processname%_masterchef.png')
+('964', '65', '10954562', 'left_up', '20180419_181014_884000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('996', '137', '10987843', 'left_down', '20180419_181048_211000_%processname%_masterchef.png')
+('1101', '153', '10989546', 'left_up', '20180419_181049_868000_%processname%_masterchef.png')
+_______________________
+('score', 0.9947640674219163)
+
+Subrayo
+('996', '137', '10987843', 'left_down', '20180419_181048_211000_%processname%_masterchef.png')
+('1101', '153', '10989546', 'left_up', '20180419_181049_868000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('485', '730', '11294140', 'left_down', '20180419_181554_475000_%processname%_masterchef.png')
+('629', '729', '11297796', 'left_up', '20180419_181558_97000_%processname%_masterchef.png')
+_______________________
+('score', 0.9978790538768293)
+
+Subrayo
+('485', '730', '11294140', 'left_down', '20180419_181554_475000_%processname%_masterchef.png')
+('629', '729', '11297796', 'left_up', '20180419_181558_97000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('486', '695', '11298828', 'left_down', '20180419_181559_155000_%processname%_masterchef.png')
+('616', '699', '11300296', 'left_up', '20180419_181600_606000_%processname%_masterchef.png')
+_______________________
+('score', 0.9959647028603383)
+
+Subrayo
+('486', '695', '11298828', 'left_down', '20180419_181559_155000_%processname%_masterchef.png')
+('616', '699', '11300296', 'left_up', '20180419_181600_606000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1071', '79', '11306578', 'left_down', '20180419_181606_951000_%processname%_masterchef.png')
+('999', '80', '11308046', 'left_up', '20180419_181608_368000_%processname%_masterchef.png')
+_______________________
+('score', 0.999676420447353)
+
+Subrayo
+('1071', '79', '11306578', 'left_down', '20180419_181606_951000_%processname%_masterchef.png')
+('999', '80', '11308046', 'left_up', '20180419_181608_368000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1070', '223', '11371515', 'left_down', '20180419_181711_857000_%processname%_masterchef.png')
+('948', '219', '11372156', 'left_up', '20180419_181712_490000_%processname%_masterchef.png')
+_______________________
+('score', 0.994857360478296)
+
+Subrayo
+('1070', '223', '11371515', 'left_down', '20180419_181711_857000_%processname%_masterchef.png')
+('948', '219', '11372156', 'left_up', '20180419_181712_490000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1162', '88', '11414046', 'left_down', '20180419_181754_419000_%processname%_masterchef.png')
+('966', '60', '11414968', 'left_up', '20180419_181755_285000_%processname%_masterchef.png')
+_______________________
+('score', 0.9914026950410284)
+
+Subrayo
+('1162', '88', '11414046', 'left_down', '20180419_181754_419000_%processname%_masterchef.png')
+('966', '60', '11414968', 'left_up', '20180419_181755_285000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1149', '77', '11416140', 'left_down', '20180419_181756_495000_%processname%_masterchef.png')
+('957', '60', '11417171', 'left_up', '20180419_181757_507000_%processname%_masterchef.png')
+_______________________
+('score', 0.9956371803516324)
+
+Subrayo
+('1149', '77', '11416140', 'left_down', '20180419_181756_495000_%processname%_masterchef.png')
+('957', '60', '11417171', 'left_up', '20180419_181757_507000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1129', '177', '11487578', 'left_down', '20180419_181907_929000_%processname%_masterchef.png')
+('1134', '182', '11487703', 'left_up', '20180419_181908_22000_%processname%_masterchef.png')
+_______________________
+('score', 0.9950091215797519)
+
+Subrayo
+('1129', '177', '11487578', 'left_down', '20180419_181907_929000_%processname%_masterchef.png')
+('1134', '182', '11487703', 'left_up', '20180419_181908_22000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1007', '96', '11535890', 'left_down', '20180419_181956_245000_%processname%_masterchef.png')
+('954', '96', '11536250', 'left_up', '20180419_181956_625000_%processname%_masterchef.png')
+_______________________
+('score', 0.9997328341924682)
+
+Subrayo
+('1007', '96', '11535890', 'left_down', '20180419_181956_245000_%processname%_masterchef.png')
+('954', '96', '11536250', 'left_up', '20180419_181956_625000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('949', '644', '11601781', 'left_down', '20180419_182102_134000_%processname%_masterchef.png')
+('955', '672', '11602046', 'left_up', '20180419_182102_370000_%processname%_masterchef.png')
+_______________________
+('score', 0.9999276416532178)
+
+Subrayo
+('949', '644', '11601781', 'left_down', '20180419_182102_134000_%processname%_masterchef.png')
+('955', '672', '11602046', 'left_up', '20180419_182102_370000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1088', '169', '11730171', 'left_down', '20180419_182310_514000_%processname%_masterchef.png')
+('1254', '172', '11731500', 'left_up', '20180419_182311_814000_%processname%_masterchef.png')
+_______________________
+('score', 0.9991822568910189)
+
+Subrayo
+('1088', '169', '11730171', 'left_down', '20180419_182310_514000_%processname%_masterchef.png')
+('1254', '172', '11731500', 'left_up', '20180419_182311_814000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1116', '192', '11779062', 'left_down', '20180419_182359_423000_%processname%_masterchef.png')
+('999', '186', '11780703', 'left_up', '20180419_182401_19000_%processname%_masterchef.png')
+_______________________
+('score', 0.9989462102480652)
+
+Subrayo
+('1116', '192', '11779062', 'left_down', '20180419_182359_423000_%processname%_masterchef.png')
+('999', '186', '11780703', 'left_up', '20180419_182401_19000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1000', '191', '11869093', 'left_down', '20180419_182529_441000_%processname%_masterchef.png')
+('1114', '194', '11870109', 'left_up', '20180419_182530_445000_%processname%_masterchef.png')
+_______________________
+('score', 0.9992850491273766)
+
+Subrayo
+('1000', '191', '11869093', 'left_down', '20180419_182529_441000_%processname%_masterchef.png')
+('1114', '194', '11870109', 'left_up', '20180419_182530_445000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1114', '192', '11870859', 'left_down', '20180419_182531_174000_%processname%_masterchef.png')
+('1001', '195', '11871796', 'left_up', '20180419_182532_96000_%processname%_masterchef.png')
+_______________________
+('score', 0.994457531381979)
+
+Subrayo
+('1114', '192', '11870859', 'left_down', '20180419_182531_174000_%processname%_masterchef.png')
+('1001', '195', '11871796', 'left_up', '20180419_182532_96000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1001', '189', '11872609', 'left_down', '20180419_182532_966000_%processname%_masterchef.png')
+('1119', '186', '11873468', 'left_up', '20180419_182533_780000_%processname%_masterchef.png')
+_______________________
+('score', 0.9990437184232149)
+
+Subrayo
+('1001', '189', '11872609', 'left_down', '20180419_182532_966000_%processname%_masterchef.png')
+('1119', '186', '11873468', 'left_up', '20180419_182533_780000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('997', '269', '11982046', 'left_down', '20180419_182722_409000_%processname%_masterchef.png')
+('1085', '269', '11983406', 'left_up', '20180419_182723_720000_%processname%_masterchef.png')
+_______________________
+('score', 0.9991092646076226)
+
+Subrayo
+('997', '269', '11982046', 'left_down', '20180419_182722_409000_%processname%_masterchef.png')
+('1085', '269', '11983406', 'left_up', '20180419_182723_720000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1107', '404', '12161093', 'left_down', '20180419_183021_453000_%processname%_masterchef.png')
+('941', '268', '12162015', 'left_up', '20180419_183022_333000_%processname%_masterchef.png')
+_______________________
+('score', 0.991448588117272)
+
+Subrayo
+('1107', '404', '12161093', 'left_down', '20180419_183021_453000_%processname%_masterchef.png')
+('941', '268', '12162015', 'left_up', '20180419_183022_333000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1090', '222', '12249046', 'left_down', '20180419_183149_407000_%processname%_masterchef.png')
+('953', '225', '12250515', 'left_up', '20180419_183150_832000_%processname%_masterchef.png')
+_______________________
+('score', 0.9951320704147445)
+
+Subrayo
+('1090', '222', '12249046', 'left_down', '20180419_183149_407000_%processname%_masterchef.png')
+('953', '225', '12250515', 'left_up', '20180419_183150_832000_%processname%_masterchef.png')
+_______________________
+cambian las coordenadas
+('1007', '74', '12418890', 'left_down', '20180419_183439_242000_%processname%_masterchef.png')
+('954', '78', '12419437', 'left_up', '20180419_183439_760000_%processname%_masterchef.png')
+_______________________
+('score', 0.9951171789199247)
+
+Subrayo
+('1007', '74', '12418890', 'left_down', '20180419_183439_242000_%processname%_masterchef.png')
+('954', '78', '12419437', 'left_up', '20180419_183439_760000_%processname%_masterchef.png')

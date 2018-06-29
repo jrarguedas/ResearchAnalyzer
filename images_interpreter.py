@@ -4,8 +4,9 @@ from skimage.measure import compare_ssim
 import cv2
 import numpy as np
 from adminfile import *
-import checkErrorLog
+import checkClickErrorLog
 import os
+from time import time
 
 path = os.getcwd() + "/logs_to_treat"
 logsList = os.listdir(path)
@@ -24,7 +25,7 @@ def loadClickInfo():
         if click_images_files.__len__() >= 1:
             clickLogPath = os.path.join(click_images_path, click_images_files[0])
             #print (clickLogPath)
-            clickLogPath = checkErrorLog.check_image_log(clickLogPath)
+            clickLogPath = checkClickErrorLog.check_image_log(clickLogPath)
             #print(clickLogPath)
             logged_clicks,resolution = readClickLog(clickLogPath)
             processClickLog(logged_clicks,click_images_path,processed_image_path,resolution)
@@ -36,6 +37,7 @@ def loadClickInfo():
 
 def readClickLog(clicks_filename):
     f = open(clicks_filename, 'r')
+    allClicks = []
     twoClicks = []
     line = f.readline()
     while line != '' and line != '\n':
@@ -43,23 +45,23 @@ def readClickLog(clicks_filename):
         logged_clicks = logged_clicks.split(" ")
         logged_clicks = logged_clicks[:-1]
 
-        #print ("original",logged_clicks)
-        #line = f.readline()
-
-        tmp = []
-        #print(len(logged_clicks))
         for click in logged_clicks:
-            tmp.append(click)
-            if len(tmp) == 2:
-                twoClicks.append(tmp)
-                #print("son dos")
-                #print("twoclicks",tmp)
-                tmp = []
+            allClicks.append(click)
         line = f.readline()
+
+    tmp = []
+    for click in allClicks:
+        #x, y, time, tipo, img = click.split(",")
+        #lado , msg = tipo.split("_")
+        #if msg == "down":
+        tmp.append(click)
+        if len(tmp) == 2:
+            twoClicks.append(tmp)
+            #print("son dos")
+            #print("twoclicks",tmp)
+            tmp = []
     #print twoClicks
     return (twoClicks,resolution)
-
-
 
 def processClickLog(logged_clicks,clickImagesPath,processed_image_path,resolution):
     for i in logged_clicks:
@@ -71,18 +73,13 @@ def processClickLog(logged_clicks,clickImagesPath,processed_image_path,resolutio
             pathImageDown = os.path.join(clickImagesPath, image_down)
             pathImageUp = os.path.join(clickImagesPath, image_up)
             score = similarity(pathImageDown,pathImageUp)
-            print("_______________________")
-            print("cambian las coordenadas")
-            print(Xdown, Ydown, miliseg_down, click_down, image_down)
-            print(Xup, Yup, miliseg_up, click_up, image_up)
-            print("_______________________")
             if (score > 0.98):
-                print("")
-                print("se sospecha que subrayo")
-                print(Xdown, Ydown, miliseg_down, click_down, image_down)
-                print(Xup, Yup, miliseg_up, click_up, image_up)
+                #print("")
+                #print ("score",score)
+                #print("Subrayo")
+                #print(image_down, "---",image_up)
                 #findCoordinates(Xdown,Ydown,pathImageDown,Xup,Yup,pathImageUp,resolution)
-                #im = diffImage(pathImageDown, pathImageUp, processed_image_path, miliseg_down)
+                im = diffImage(pathImageDown, pathImageUp, processed_image_path, miliseg_down)
 
 
 def similarity(img1,img2):
@@ -208,4 +205,7 @@ def cutImage(x,y,img,screensize):
     #image_data = pyautogui.screenshot(region=((x1, y1, w, h)))
 
 if __name__ == '__main__':
+    start_time = time()
     loadClickInfo()
+    elapsed_time = time() - start_time
+    print elapsed_time

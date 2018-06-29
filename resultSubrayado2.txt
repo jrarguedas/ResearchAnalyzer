@@ -1,0 +1,123 @@
+
+se sospecha que subrayo
+('1067', '81', '10683796', 'left_down', '20180419_180544_119000_%processname%_masterchef.png')
+('969', '79', '10686578', 'left_up', '20180419_180546_900000_%processname%_masterchef.png')
+_______________________
+se sospecha que subrayo
+('1119', '61', '10689593', 'left_down', '20180419_180549_916000_%processname%_masterchef.png')
+('992', '61', '10690515', 'left_up', '20180419_180550_838000_%processname%_masterchef.png')
+_______________________
+
+falta igual 
+
+
+se sospecha que subrayo
+('1067', '79', '10691265', 'left_down', '20180419_180551_588000_%processname%_masterchef.png')
+('967', '59', '10692421', 'left_up', '20180419_180552_760000_%processname%_masterchef.png')
+_______________________
+NUEVAS
+se sospecha que subrayo
+('1151', '141', '10849734', 'left_down', '20180419_180830_59000_%processname%_masterchef.png')
+('1138', '141', '10854687', 'left_up', '20180419_180835_12000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('1149', '145', '10895484', 'left_down', '20180419_180915_818000_%processname%_masterchef.png')
+('1145', '142', '10895578', 'left_up', '20180419_180915_911000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('1179', '145', '10915531', 'left_down', '20180419_180935_896000_%processname%_masterchef.png')
+('990', '141', '10916703', 'left_up', '20180419_180937_21000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('1173', '145', '10917953', 'left_down', '20180419_180938_271000_%processname%_masterchef.png')
+('996', '141', '10919140', 'left_up', '20180419_180939_458000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('1143', '65', '10953437', 'left_down', '20180419_181013_774000_%processname%_masterchef.png')
+('964', '65', '10954562', 'left_up', '20180419_181014_884000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('996', '137', '10987843', 'left_down', '20180419_181048_211000_%processname%_masterchef.png')
+('1101', '153', '10989546', 'left_up', '20180419_181049_868000_%processname%_masterchef.png')
+_______________________
+ERROR
+se sospecha que subrayo
+('148', '7', '11263593', 'left_up', '20180419_181523_898000_%processname%_masterchef.png')
+('1', '52', '11264250', 'left_down', '20180419_181524_611000_%processname%_masterchef.png')
+_______________________
+se sospecha que subrayo
+('503', '0', '11265015', 'left_up', '20180419_181525_404000_%processname%_masterchef.png')
+('572', '24', '11265562', 'left_down', '20180419_181525_873000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('485', '730', '11294140', 'left_down', '20180419_181554_475000_%processname%_masterchef.png')
+('629', '729', '11297796', 'left_up', '20180419_181558_97000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('1071', '79', '11306578', 'left_down', '20180419_181606_951000_%processname%_masterchef.png')
+('999', '80', '11308046', 'left_up', '20180419_181608_368000_%processname%_masterchef.png')
+_______________________
+
+
+
+CAMBIO DE APLICACION
+
+se sospecha que subrayo
+('1162', '88', '11414046', 'left_down', '20180419_181754_419000_%processname%_masterchef.png')
+('966', '60', '11414968', 'left_up', '20180419_181755_285000_%processname%_masterchef.png')
+_______________________
+
+495 CAMBIO DE APLICACION
+
+se sospecha que subrayo
+('1129', '177', '11487578', 'left_down', '20180419_181907_929000_%processname%_masterchef.png')
+('1134', '182', '11487703', 'left_up', '20180419_181908_22000_%processname%_masterchef.png')
+
+245 CAMBIO DE APLICACION
+
+ERROR NUEVO
+se sospecha que subrayo
+('949', '644', '11601781', 'left_down', '20180419_182102_134000_%processname%_masterchef.png')
+('955', '672', '11602046', 'left_up', '20180419_182102_370000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('1088', '169', '11730171', 'left_down', '20180419_182310_514000_%processname%_masterchef.png')
+('1254', '172', '11731500', 'left_up', '20180419_182311_814000_%processname%_masterchef.png')
+_______________________
+
+
+423 CAMBIO DE APLICACION
+
+MALA PAREJA
+se sospecha que subrayo
+('999', '186', '11780703', 'left_up', '20180419_182401_19000_%processname%_masterchef.png')
+('1159', '201', '11784656', 'left_down', '20180419_182405_31000_%processname%_masterchef.png')
+_______________________
+
+
+se sospecha que subrayo
+('1000', '191', '11869093', 'left_down', '20180419_182529_441000_%processname%_masterchef.png')
+('1114', '194', '11870109', 'left_up', '20180419_182530_445000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('1114', '192', '11870859', 'left_down', '20180419_182531_174000_%processname%_masterchef.png')
+('1001', '195', '11871796', 'left_up', '20180419_182532_96000_%processname%_masterchef.png')
+_______________________
+
+se sospecha que subrayo
+('1001', '189', '11872609', 'left_down', '20180419_182532_966000_%processname%_masterchef.png')
+('1119', '186', '11873468', 'left_up', '20180419_182533_780000_%processname%_masterchef.png')
+_______________________
+se sospecha que subrayo
+('997', '269', '11982046', 'left_down', '20180419_182722_409000_%processname%_masterchef.png')
+('1085', '269', '11983406', 'left_up', '20180419_182723_720000_%processname%_masterchef.png')
+_______________________
